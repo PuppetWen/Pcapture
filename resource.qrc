@@ -1,0 +1,35 @@
+<RCC>
+  <qresource>
+    <file>img/main_icon.jpg</file>
+  </qresource>
+  <qresource>
+    <file>img/clear_icon.jpg</file>
+  </qresource>
+  <qresource>
+    <file>img/open_icon.jpg</file>
+  </qresource>
+  <qresource>
+    <file>img/usage_icon.jpg</file>
+  </qresource>
+  <qresource>
+    <file>img/crawling_configuration_icon.png</file>
+  </qresource>
+  <qresource>
+    <file>img/disconnection_mysql_icon.jpg</file>
+  </qresource>
+  <qresource>
+    <file>img/mysql_configuration_icon.jpg</file>
+  </qresource>
+  <qresource>
+    <file>img/sava_mysql_icon.jpg</file>
+  </qresource>
+  <qresource>
+    <file>img/connect_mysql_icon.jpg</file>
+  </qresource>
+  <qresource>
+    <file>img/save_local_icon.jpg</file>
+  </qresource>
+  <qresource>
+    <file>img/test_network_icon.jpg</file>
+  </qresource>
+</RCC>

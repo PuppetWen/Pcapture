@@ -1,0 +1,239 @@
+E:\tools\python\python.exe "E:\tools\pycharm\PyCharm\PyCharm 2020.1\plugins\python\helpers\pydev\pydevd.py" --multiproc --qt-support=auto --client 127.0.0.1 --port 2829 --file F:/android/tools/Pcapture/HomeFolder/main.py
+pydev debugger: process 9492 is connecting
+Connected to pydev debugger (build 201.6668.115)
+start被点击
+['Pcapture', '-U', '-P', '京e办公', '-v', '-p', 'test.pcap']
+京e办公 test.pcap False True True  False 0
+attach
+SendCheck被选中
+RecvCheck被选中
+2023-01-10 11:24:38.890 | INFO     | HookDataInterception:on_message:184 - SSL Session: 
+2023-01-10 11:24:38.890 | INFO     | HookDataInterception:on_message:190 - [HTTP_send] 127.0.0.1:49676 --> 127.0.0.1:10001
+2023-01-10 11:24:38.891 | INFO     | HookDataInterception:on_message:193 - POST http://10.162.4.204:8000/oauth2/token HTTP/1.1..Content-Type: application/x-www-form-urlencoded..X-CLIENT-CHECKSUM: a0b80925604990e3cc1324c2c252540a923fd498..Accept-Encoding: gzip..Content-Length: 260..Host: 10.162.4.204:8000..Connection: Keep-Alive..User-Agent: MinxingMessenger/8.0.0.005089 (Google-Pixel 4 XL; Android/12) C9393B7F9548CAE689326533B514C107E3431577F5768833FE3C08C431BD2D61....
+2023-01-10 11:24:38.891 | INFO     | HookDataInterception:on_message:194 - java.lang.Throwable
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:117)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:161)
+	at org.apache.http.impl.io.AbstractSessionOutputBuffer.flushBuffer(AbstractSessionOutputBuffer.java:92)
+	at org.apache.http.impl.io.AbstractSessionOutputBuffer.write(AbstractSessionOutputBuffer.java:112)
+	at org.apache.http.impl.io.ContentLengthOutputStream.write(ContentLengthOutputStream.java:118)
+	at org.apache.http.impl.io.ContentLengthOutputStream.write(ContentLengthOutputStream.java:124)
+	at org.apache.http.entity.StringEntity.writeTo(StringEntity.java:94)
+	at org.apache.http.impl.entity.EntitySerializer.serialize(EntitySerializer.java:102)
+	at org.apache.http.impl.AbstractHttpClientConnection.sendRequestEntity(AbstractHttpClientConnection.java:167)
+	at org.apache.http.impl.conn.AbstractClientConnAdapter.sendRequestEntity(AbstractClientConnAdapter.java:277)
+	at org.apache.http.protocol.HttpRequestExecutor.doSendRequest(HttpRequestExecutor.java:242)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:124)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:442)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:560)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:492)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:470)
+	at com.minxing.kit.internal.core.http.MXHttpClient.requestServer(MXHttpClient.java:569)
+	at com.minxing.kit.internal.core.http.MXHttpClient.request(MXHttpClient.java:128)
+	at com.minxing.kit.internal.core.http.MXHttpClientAsync.handleResult(MXHttpClientAsync.java:136)
+	at com.minxing.kit.internal.core.http.MXHttpClientAsync.handleNormalresult(MXHttpClientAsync.java:169)
+	at com.minxing.kit.internal.core.http.MXHttpClientAsync.doInBackground(MXHttpClientAsync.java:120)
+	at com.minxing.kit.internal.core.http.MXHttpClientAsync.doInBackground(MXHttpClientAsync.java:26)
+	at android.os.AsyncTask$3.call(AsyncTask.java:394)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:462)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:301)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.lang.Thread.run(Thread.java:920)
+<class 'bytes'> b'POST http://10.162.4.204:8000/oauth2/token HTTP/1.1\r\nContent-Type: application/x-www-form-urlencoded\r\nX-CLIENT-CHECKSUM: a0b80925604990e3cc1324c2c252540a923fd498\r\nAccept-Encoding: gzip\r\nContent-Length: 260\r\nHost: 10.162.4.204:8000\r\nConnection: Keep-Alive\r\nUser-Agent: MinxingMessenger/8.0.0.005089 (Google-Pixel 4 XL; Android/12) C9393B7F9548CAE689326533B514C107E3431577F5768833FE3C08C431BD2D61\r\n\r\n'
+sssssssPOST http://10.162.4.204:8000/oauth2/token HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+X-CLIENT-CHECKSUM: a0b80925604990e3cc1324c2c252540a923fd498
+Accept-Encoding: gzip
+Content-Length: 260
+Host: 10.162.4.204:8000
+Connection: Keep-Alive
+User-Agent: MinxingMessenger/8.0.0.005089 (Google-Pixel 4 XL; Android/12) C9393B7F9548CAE689326533B514C107E3431577F5768833FE3C08C431BD2D61
+这都进不来？
+HTTP_send
+['POST http://10.162.4.204:8000/oauth2/token HTTP/1.1\r\nContent-Type: application/x-www-form-urlencoded\r\nX-CLIENT-CHECKSUM: a0b80925604990e3cc1324c2c252540a923fd498\r\nAccept-Encoding: gzip\r\nContent-Length: 260\r\nHost: 10.162.4.204:8000\r\nConnection: Keep-Alive\r\nUser-Agent: MinxingMessenger/8.0.0.005089 (Google-Pixel 4 XL; Android/12) C9393B7F9548CAE689326533B514C107E3431577F5768833FE3C08C431BD2D61\r\n\r\n']
+这里能进来吗？
+['POST http://10.162.4.204:8000/oauth2/token HTTP/1.1\r\nContent-Type: application/x-www-form-urlencoded\r\nX-CLIENT-CHECKSUM: a0b80925604990e3cc1324c2c252540a923fd498\r\nAccept-Encoding: gzip\r\nContent-Length: 260\r\nHost: 10.162.4.204:8000\r\nConnection: Keep-Alive\r\nUser-Agent: MinxingMessenger/8.0.0.005089 (Google-Pixel 4 XL; Android/12) C9393B7F9548CAE689326533B514C107E3431577F5768833FE3C08C431BD2D61\r\n\r\n']
+False
+这里能进来吗？
+['POST http://10.162.4.204:8000/oauth2/token HTTP/1.1\r\nContent-Type: application/x-www-form-urlencoded\r\nX-CLIENT-CHECKSUM: a0b80925604990e3cc1324c2c252540a923fd498\r\nAccept-Encoding: gzip\r\nContent-Length: 260\r\nHost: 10.162.4.204:8000\r\nConnection: Keep-Alive\r\nUser-Agent: MinxingMessenger/8.0.0.005089 (Google-Pixel 4 XL; Android/12) C9393B7F9548CAE689326533B514C107E3431577F5768833FE3C08C431BD2D61\r\n\r\n']
+False
+这里能进来吗？
+['POST http://10.162.4.204:8000/oauth2/token HTTP/1.1\r\nContent-Type: application/x-www-form-urlencoded\r\nX-CLIENT-CHECKSUM: a0b80925604990e3cc1324c2c252540a923fd498\r\nAccept-Encoding: gzip\r\nContent-Length: 260\r\nHost: 10.162.4.204:8000\r\nConnection: Keep-Alive\r\nUser-Agent: MinxingMessenger/8.0.0.005089 (Google-Pixel 4 XL; Android/12) C9393B7F9548CAE689326533B514C107E3431577F5768833FE3C08C431BD2D61\r\n\r\n']
+False
+这里能进来吗？
+['POST http://10.162.4.204:8000/oauth2/token HTTP/1.1\r\nContent-Type: application/x-www-form-urlencoded\r\nX-CLIENT-CHECKSUM: a0b80925604990e3cc1324c2c252540a923fd498\r\nAccept-Encoding: gzip\r\nContent-Length: 260\r\nHost: 10.162.4.204:8000\r\nConnection: Keep-Alive\r\nUser-Agent: MinxingMessenger/8.0.0.005089 (Google-Pixel 4 XL; Android/12) C9393B7F9548CAE689326533B514C107E3431577F5768833FE3C08C431BD2D61\r\n\r\n']
+False
+这里能进来吗？
+['POST http://10.162.4.204:8000/oauth2/token HTTP/1.1\r\nContent-Type: application/x-www-form-urlencoded\r\nX-CLIENT-CHECKSUM: a0b80925604990e3cc1324c2c252540a923fd498\r\nAccept-Encoding: gzip\r\nContent-Length: 260\r\nHost: 10.162.4.204:8000\r\nConnection: Keep-Alive\r\nUser-Agent: MinxingMessenger/8.0.0.005089 (Google-Pixel 4 XL; Android/12) C9393B7F9548CAE689326533B514C107E3431577F5768833FE3C08C431BD2D61\r\n\r\n']
+False
+这里能进来吗？
+['POST http://10.162.4.204:8000/oauth2/token HTTP/1.1\r\nContent-Type: application/x-www-form-urlencoded\r\nX-CLIENT-CHECKSUM: a0b80925604990e3cc1324c2c252540a923fd498\r\nAccept-Encoding: gzip\r\nContent-Length: 260\r\nHost: 10.162.4.204:8000\r\nConnection: Keep-Alive\r\nUser-Agent: MinxingMessenger/8.0.0.005089 (Google-Pixel 4 XL; Android/12) C9393B7F9548CAE689326533B514C107E3431577F5768833FE3C08C431BD2D61\r\n\r\n']
+False
+SendPass被按下
+这里能进来吗？
+['POST http://10.162.4.204:8000/oauth2/token HTTP/1.1\r\nContent-Type: application/x-www-form-urlencoded\r\nX-CLIENT-CHECKSUM: a0b80925604990e3cc1324c2c252540a923fd498\r\nAccept-Encoding: gzip\r\nContent-Length: 260\r\nHost: 10.162.4.204:8000\r\nConnection: Keep-Alive\r\nUser-Agent: MinxingMessenger/8.0.0.005089 (Google-Pixel 4 XL; Android/12) C9393B7F9548CAE689326533B514C107E3431577F5768833FE3C08C431BD2D61\r\n\r\n']
+True
+POST http://10.162.4.204:8000/oauth2/token HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+X-CLIENT-CHECKSUM: a0b80925604990e3cc1324c2c252540a923fd498
+Accept-Encoding: gzip
+Content-Length: 260
+Host: 10.162.4.204:8000
+Connection: Keep-Alive
+User-Agent: MinxingMessenger/8.0.0.005089 (Google-Pixel 4 XL; Android/12) C9393B7F9548CAE689326533B514C107E3431577F5768833FE3C08C431BD2D61
+能检测到吗？
+received_json_object is : POST http://10.162.4.204:8000/oauth2/token HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+X-CLIENT-CHECKSUM: a0b80925604990e3cc1324c2c252540a923fd498
+Accept-Encoding: gzip
+Content-Length: 260
+Host: 10.162.4.204:8000
+Connection: Keep-Alive
+User-Agent: MinxingMessenger/8.0.0.005089 (Google-Pixel 4 XL; Android/12) C9393B7F9548CAE689326533B514C107E3431577F5768833FE3C08C431BD2D61
+bytearry length is : 8192
+received_json_object length is : 398
+进来了吗
+数据是什么 ：POST http://10.162.4.204:8000/oauth2/token HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+X-CLIENT-CHECKSUM: a0b80925604990e3cc1324c2c252540a923fd498
+Accept-Encoding: gzip
+Content-Length: 260
+Host: 10.162.4.204:8000
+Connection: Keep-Alive
+User-Agent: MinxingMessenger/8.0.0.005089 (Google-Pixel 4 XL; Android/12) C9393B7F9548CAE689326533B514C107E3431577F5768833FE3C08C431BD2D61
+这是什么时候触发的1?80,79,83,84,32,104,116,116,112,58,47,47,49,48,46,49,54,50,46,52,46,50,48,52,58,56,48,48,48,47,111,97,117,116,104,50,47,116,111,107,101,110,32,72,84,84,80,47,49,46,49,13,10,67,111,110,116,101,110,116,45,84,121,112,101,58,32,97,112,112,108,105,99,97,116,105,111,110,47,120,45,119,119,119,45,102,111,114,109,45,117,114,108,101,110,99,111,100,101,100,13,10,88,45,67,76,73,69,78,84,45,67,72,69,67,75,83,85,77,58,32,97,48,98,56,48,57,50,53,54,48,52,57,57,48,101,51,99,99,49,51,50,52,99,50,99,50,53,50,53,52,48,97,57,50,51,102,100,52,57,56,13,10,65,99,99,101,112,116,45,69,110,99,111,100,105,110,103,58,32,103,122,105,112,13,10,67,111,110,116,101,110,116,45,76,101,110,103,116,104,58,32,50,54,48,13,10,72,111,115,116,58,32,49,48,46,49,54,50,46,52,46,50,48,52,58,56,48,48,48,13,10,67,111,110,110,101,99,116,105,111,110,58,32,75,101,101,112,45,65,108,105,118,101,13,10,85,115,101,114,45,65,103,101,110,116,58,32,77,105,110,120,105,110,103,77,101,115,115,101,110,103,101,114,47,56,46,48,46,48,46,48,48,53,48,56,57,32,40,71,111,111,103,108,101,45,80,105,120,101,108,32,52,32,88,76,59,32,65,110,100,114,111,105,100,47,49,50,41,32,67,57,51,57,51,66,55,70,57,53,52,56,67,65,69,54,56,57,51,50,54,53,51,51,66,53,49,52,67,49,48,55,69,51,52,51,49,53,55,55,70,53,55,54,56,56,51,51,70,69,51,67,48,56,67,52,51,49,66,68,50,68,54,49,13,10,13,10
+SendPass被释放
+['POST http://10.162.4.204:8000/oauth2/token HTTP/1.1\r\nContent-Type: application/x-www-form-urlencoded\r\nX-CLIENT-CHECKSUM: a0b80925604990e3cc1324c2c252540a923fd498\r\nAccept-Encoding: gzip\r\nContent-Length: 260\r\nHost: 10.162.4.204:8000\r\nConnection: Keep-Alive\r\nUser-Agent: MinxingMessenger/8.0.0.005089 (Google-Pixel 4 XL; Android/12) C9393B7F9548CAE689326533B514C107E3431577F5768833FE3C08C431BD2D61\r\n\r\n']
+SendQueue已经为空
+这是什么时候触发的2?80,79,83,84,32,104,116,116,112,58,47,47,49,48,46,49,54,50,46,52,46,50,48,52,58,56,48,48,48,47,111,97,117,116,104,50,47,116,111,107,101,110,32,72,84,84,80,47,49,46,49,13,10,67,111,110,116,101,110,116,45,84,121,112,101,58,32,97,112,112,108,105,99,97,116,105,111,110,47,120,45,119,119,119,45,102,111,114,109,45,117,114,108,101,110,99,111,100,101,100,13,10,88,45,67,76,73,69,78,84,45,67,72,69,67,75,83,85,77,58,32,97,48,98,56,48,57,50,53,54,48,52,57,57,48,101,51,99,99,49,51,50,52,99,50,99,50,53,50,53,52,48,97,57,50,51,102,100,52,57,56,13,10,65,99,99,101,112,116,45,69,110,99,111,100,105,110,103,58,32,103,122,105,112,13,10,67,111,110,116,101,110,116,45,76,101,110,103,116,104,58,32,50,54,48,13,10,72,111,115,116,58,32,49,48,46,49,54,50,46,52,46,50,48,52,58,56,48,48,48,13,10,67,111,110,110,101,99,116,105,111,110,58,32,75,101,101,112,45,65,108,105,118,101,13,10,85,115,101,114,45,65,103,101,110,116,58,32,77,105,110,120,105,110,103,77,101,115,115,101,110,103,101,114,47,56,46,48,46,48,46,48,48,53,48,56,57,32,40,71,111,111,103,108,101,45,80,105,120,101,108,32,52,32,88,76,59,32,65,110,100,114,111,105,100,47,49,50,41,32,67,57,51,57,51,66,55,70,57,53,52,56,67,65,69,54,56,57,51,50,54,53,51,51,66,53,49,52,67,49,48,55,69,51,52,51,49,53,55,55,70,53,55,54,56,56,51,51,70,69,51,67,48,56,67,52,51,49,66,68,50,68,54,49,13,10,13,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+1
+<class 'bytes'> b'grant_type=password&login_name=admim%40bylc&nonce=2%2BYv2%2BJ8EK8XqG0UYWLrMeg%3D%3D&password=e2c531a108d603974d7c8830d1657bd8&client_id=2&include_user=true&device_uuid=da62dfd0b97390c02e85c73b553fa43114cbcf5c&mqtt=true&ext_param=%7B%22client_id%22%3A%222%22%7D'
+sssssssgrant_type=password&login_name=admim%40bylc&nonce=2%2BYv2%2BJ8EK8XqG0UYWLrMeg%3D%3D&password=e2c531a108d603974d7c8830d1657bd8&client_id=2&include_user=true&device_uuid=da62dfd0b97390c02e85c73b553fa43114cbcf5c&mqtt=true&ext_param=%7B%22client_id%22%3A%222%22%7D
+这都进不来？
+HTTP_send
+2023-01-10 11:24:40.918 | INFO     | HookDataInterception:on_message:184 - SSL Session: 
+2023-01-10 11:24:40.918 | INFO     | HookDataInterception:on_message:190 - [HTTP_send] 127.0.0.1:49676 --> 127.0.0.1:10001
+2023-01-10 11:24:40.919 | INFO     | HookDataInterception:on_message:193 - grant_type=password&login_name=admim%40bylc&nonce=2%2BYv2%2BJ8EK8XqG0UYWLrMeg%3D%3D&password=e2c531a108d603974d7c8830d1657bd8&client_id=2&include_user=true&device_uuid=da62dfd0b97390c02e85c73b553fa43114cbcf5c&mqtt=true&ext_param=%7B%22client_id%22%3A%222%22%7D
+2023-01-10 11:24:40.919 | INFO     | HookDataInterception:on_message:194 - java.lang.Throwable
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:117)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:161)
+	at org.apache.http.impl.io.AbstractSessionOutputBuffer.write(AbstractSessionOutputBuffer.java:114)
+	at org.apache.http.impl.io.ContentLengthOutputStream.write(ContentLengthOutputStream.java:118)
+	at org.apache.http.impl.io.ContentLengthOutputStream.write(ContentLengthOutputStream.java:124)
+	at org.apache.http.entity.StringEntity.writeTo(StringEntity.java:94)
+	at org.apache.http.impl.entity.EntitySerializer.serialize(EntitySerializer.java:102)
+	at org.apache.http.impl.AbstractHttpClientConnection.sendRequestEntity(AbstractHttpClientConnection.java:167)
+	at org.apache.http.impl.conn.AbstractClientConnAdapter.sendRequestEntity(AbstractClientConnAdapter.java:277)
+	at org.apache.http.protocol.HttpRequestExecutor.doSendRequest(HttpRequestExecutor.java:242)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:124)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:442)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:560)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:492)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:470)
+	at com.minxing.kit.internal.core.http.MXHttpClient.requestServer(MXHttpClient.java:569)
+	at com.minxing.kit.internal.core.http.MXHttpClient.request(MXHttpClient.java:128)
+	at com.minxing.kit.internal.core.http.MXHttpClientAsync.handleResult(MXHttpClientAsync.java:136)
+	at com.minxing.kit.internal.core.http.MXHttpClientAsync.handleNormalresult(MXHttpClientAsync.java:169)
+	at com.minxing.kit.internal.core.http.MXHttpClientAsync.doInBackground(MXHttpClientAsync.java:120)
+	at com.minxing.kit.internal.core.http.MXHttpClientAsync.doInBackground(MXHttpClientAsync.java:26)
+	at android.os.AsyncTask$3.call(AsyncTask.java:394)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:462)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:301)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.lang.Thread.run(Thread.java:920)
+['grant_type=password&login_name=admim%40bylc&nonce=2%2BYv2%2BJ8EK8XqG0UYWLrMeg%3D%3D&password=e2c531a108d603974d7c8830d1657bd8&client_id=2&include_user=true&device_uuid=da62dfd0b97390c02e85c73b553fa43114cbcf5c&mqtt=true&ext_param=%7B%22client_id%22%3A%222%22%7D']
+这里能进来吗？
+['grant_type=password&login_name=admim%40bylc&nonce=2%2BYv2%2BJ8EK8XqG0UYWLrMeg%3D%3D&password=e2c531a108d603974d7c8830d1657bd8&client_id=2&include_user=true&device_uuid=da62dfd0b97390c02e85c73b553fa43114cbcf5c&mqtt=true&ext_param=%7B%22client_id%22%3A%222%22%7D']
+False
+这里能进来吗？
+['grant_type=password&login_name=admim%40bylc&nonce=2%2BYv2%2BJ8EK8XqG0UYWLrMeg%3D%3D&password=e2c531a108d603974d7c8830d1657bd8&client_id=2&include_user=true&device_uuid=da62dfd0b97390c02e85c73b553fa43114cbcf5c&mqtt=true&ext_param=%7B%22client_id%22%3A%222%22%7D']
+False
+这里能进来吗？
+['grant_type=password&login_name=admim%40bylc&nonce=2%2BYv2%2BJ8EK8XqG0UYWLrMeg%3D%3D&password=e2c531a108d603974d7c8830d1657bd8&client_id=2&include_user=true&device_uuid=da62dfd0b97390c02e85c73b553fa43114cbcf5c&mqtt=true&ext_param=%7B%22client_id%22%3A%222%22%7D']
+False
+这里能进来吗？
+['grant_type=password&login_name=admim%40bylc&nonce=2%2BYv2%2BJ8EK8XqG0UYWLrMeg%3D%3D&password=e2c531a108d603974d7c8830d1657bd8&client_id=2&include_user=true&device_uuid=da62dfd0b97390c02e85c73b553fa43114cbcf5c&mqtt=true&ext_param=%7B%22client_id%22%3A%222%22%7D']
+False
+这里能进来吗？
+['grant_type=password&login_name=admim%40bylc&nonce=2%2BYv2%2BJ8EK8XqG0UYWLrMeg%3D%3D&password=e2c531a108d603974d7c8830d1657bd8&client_id=2&include_user=true&device_uuid=da62dfd0b97390c02e85c73b553fa43114cbcf5c&mqtt=true&ext_param=%7B%22client_id%22%3A%222%22%7D']
+False
+这里能进来吗？
+['grant_type=password&login_name=admim%40bylc&nonce=2%2BYv2%2BJ8EK8XqG0UYWLrMeg%3D%3D&password=e2c531a108d603974d7c8830d1657bd8&client_id=2&include_user=true&device_uuid=da62dfd0b97390c02e85c73b553fa43114cbcf5c&mqtt=true&ext_param=%7B%22client_id%22%3A%222%22%7D']
+False
+这里能进来吗？
+['grant_type=password&login_name=admim%40bylc&nonce=2%2BYv2%2BJ8EK8XqG0UYWLrMeg%3D%3D&password=e2c531a108d603974d7c8830d1657bd8&client_id=2&include_user=true&device_uuid=da62dfd0b97390c02e85c73b553fa43114cbcf5c&mqtt=true&ext_param=%7B%22client_id%22%3A%222%22%7D']
+False
+SendPass被按下
+这里能进来吗？
+['grant_type=password&login_name=admim%40bylc&nonce=2%2BYv2%2BJ8EK8XqG0UYWLrMeg%3D%3D&password=e2c531a108d603974d7c8830d1657bd8&client_id=2&include_user=true&device_uuid=da62dfd0b97390c02e85c73b553fa43114cbcf5c&mqtt=true&ext_param=%7B%22client_id%22%3A%222%22%7D']
+True
+grant_type=password&login_name=admim%40bylc&nonce=2%2BYv2%2BJ8EK8XqG0UYWLrMeg%3D%3D&password=e2c531a108d603974d7c8830d1657bd8&client_id=2&include_user=true&device_uuid=da62dfd0b97390c02e85c73b553fa43114cbcf5c&mqtt=true&ext_param=%7B%22client_id%22%3A%222%22%7D
+能检测到吗？
+received_json_object is : grant_type=password&login_name=admim%40bylc&nonce=2%2BYv2%2BJ8EK8XqG0UYWLrMeg%3D%3D&password=e2c531a108d603974d7c8830d1657bd8&client_id=2&include_user=true&device_uuid=da62dfd0b97390c02e85c73b553fa43114cbcf5c&mqtt=true&ext_param=%7B%22client_id%22%3A%222%22%7D
+bytearry length is : 260
+received_json_object length is : 260
+进来了吗
+数据是什么 ：grant_type=password&login_name=admim%40bylc&nonce=2%2BYv2%2BJ8EK8XqG0UYWLrMeg%3D%3D&password=e2c531a108d603974d7c8830d1657bd8&client_id=2&include_user=true&device_uuid=da62dfd0b97390c02e85c73b553fa43114cbcf5c&mqtt=true&ext_param=%7B%22client_id%22%3A%222%22%7D
+这是什么时候触发的1?103,114,97,110,116,95,116,121,112,101,61,112,97,115,115,119,111,114,100,38,108,111,103,105,110,95,110,97,109,101,61,97,100,109,105,109,37,52,48,98,121,108,99,38,110,111,110,99,101,61,50,37,50,66,89,118,50,37,50,66,74,56,69,75,56,88,113,71,48,85,89,87,76,114,77,101,103,37,51,68,37,51,68,38,112,97,115,115,119,111,114,100,61,101,50,99,53,51,49,97,49,48,56,100,54,48,51,57,55,52,100,55,99,56,56,51,48,100,49,54,53,55,98,100,56,38,99,108,105,101,110,116,95,105,100,61,50,38,105,110,99,108,117,100,101,95,117,115,101,114,61,116,114,117,101,38,100,101,118,105,99,101,95,117,117,105,100,61,100,97,54,50,100,102,100,48,98,57,55,51,57,48,99,48,50,101,56,53,99,55,51,98,53,53,51,102,97,52,51,49,49,52,99,98,99,102,53,99,38,109,113,116,116,61,116,114,117,101,38,101,120,116,95,112,97,114,97,109,61,37,55,66,37,50,50,99,108,105,101,110,116,95,105,100,37,50,50,37,51,65,37,50,50,50,37,50,50,37,55,68
+这是什么时候触发的2?103,114,97,110,116,95,116,121,112,101,61,112,97,115,115,119,111,114,100,38,108,111,103,105,110,95,110,97,109,101,61,97,100,109,105,109,37,52,48,98,121,108,99,38,110,111,110,99,101,61,50,37,50,66,89,118,50,37,50,66,74,56,69,75,56,88,113,71,48,85,89,87,76,114,77,101,103,37,51,68,37,51,68,38,112,97,115,115,119,111,114,100,61,101,50,99,53,51,49,97,49,48,56,100,54,48,51,57,55,52,100,55,99,56,56,51,48,100,49,54,53,55,98,100,56,38,99,108,105,101,110,116,95,105,100,61,50,38,105,110,99,108,117,100,101,95,117,115,101,114,61,116,114,117,101,38,100,101,118,105,99,101,95,117,117,105,100,61,100,97,54,50,100,102,100,48,98,57,55,51,57,48,99,48,50,101,56,53,99,55,51,98,53,53,51,102,97,52,51,49,49,52,99,98,99,102,53,99,38,109,113,116,116,61,116,114,117,101,38,101,120,116,95,112,97,114,97,109,61,37,55,66,37,50,50,99,108,105,101,110,116,95,105,100,37,50,50,37,51,65,37,50,50,50,37,50,50,37,55,68
+1
+SendPass被释放
+['grant_type=password&login_name=admim%40bylc&nonce=2%2BYv2%2BJ8EK8XqG0UYWLrMeg%3D%3D&password=e2c531a108d603974d7c8830d1657bd8&client_id=2&include_user=true&device_uuid=da62dfd0b97390c02e85c73b553fa43114cbcf5c&mqtt=true&ext_param=%7B%22client_id%22%3A%222%22%7D']
+SendQueue已经为空
+2023-01-10 11:24:43.069 | INFO     | HookDataInterception:on_message:184 - SSL Session: 
+2023-01-10 11:24:43.069 | INFO     | HookDataInterception:on_message:190 - [HTTP_recv] 127.0.0.1:10001 --> 127.0.0.1:49676
+2023-01-10 11:24:43.070 | INFO     | HookDataInterception:on_message:193 - HTTP/1.1 400 Bad Request..Transfer-Encoding: chunked..Cache-Control: no-cache..Content-Type: application/json..Server: Unknown..Date: Tue, 10 Jan 2023 03:24:21 GMT..X-Runtime: 0.012120....46..{"errors":{"message":".....................","status_code":"invalid"}}..0....
+2023-01-10 11:24:43.070 | INFO     | HookDataInterception:on_message:194 - java.lang.Throwable
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:119)
+	at java.net.SocketInputStream.read(SocketInputStream.java:176)
+	at java.net.SocketInputStream.read(SocketInputStream.java:144)
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.fillBuffer(AbstractSessionInputBuffer.java:108)
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.readLine(AbstractSessionInputBuffer.java:196)
+	at org.apache.http.impl.conn.DefaultResponseParser.parseHead(DefaultResponseParser.java:88)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:179)
+	at org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:185)
+	at org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:240)
+	at org.apache.http.impl.conn.AbstractClientConnAdapter.receiveResponseHeader(AbstractClientConnAdapter.java:264)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:284)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:126)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:442)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:560)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:492)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:470)
+	at com.minxing.kit.internal.core.http.MXHttpClient.requestServer(MXHttpClient.java:569)
+	at com.minxing.kit.internal.core.http.MXHttpClient.request(MXHttpClient.java:128)
+	at com.minxing.kit.internal.core.http.MXHttpClientAsync.handleResult(MXHttpClientAsync.java:136)
+	at com.minxing.kit.internal.core.http.MXHttpClientAsync.handleNormalresult(MXHttpClientAsync.java:169)
+	at com.minxing.kit.internal.core.http.MXHttpClientAsync.doInBackground(MXHttpClientAsync.java:120)
+	at com.minxing.kit.internal.core.http.MXHttpClientAsync.doInBackground(MXHttpClientAsync.java:26)
+	at android.os.AsyncTask$3.call(AsyncTask.java:394)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:462)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:301)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.lang.Thread.run(Thread.java:920)
+<class 'bytes'> b'HTTP/1.1 400 Bad Request\r\nTransfer-Encoding: chunked\r\nCache-Control: no-cache\r\nContent-Type: application/json\r\nServer: Unknown\r\nDate: Tue, 10 Jan 2023 03:24:21 GMT\r\nX-Runtime: 0.012120\r\n\r\n46\r\n{"errors":{"message":"\xe5\xb8\x90\xe5\x8f\xb7\xe6\x88\x96\xe5\xaf\x86\xe7\xa0\x81\xe9\x94\x99\xe8\xaf\xaf","status_code":"invalid"}}\r\n0\r\n\r\n'
+sssssssHTTP/1.1 400 Bad Request
+Transfer-Encoding: chunked
+Cache-Control: no-cache
+Content-Type: application/json
+Server: Unknown
+Date: Tue, 10 Jan 2023 03:24:21 GMT
+X-Runtime: 0.012120
+46
+{"errors":{"message":"帐号或密码错误","status_code":"invalid"}}
+0
+这都进不来？
+HTTP_recv
+[]
+Puppet7 stack of message: 0

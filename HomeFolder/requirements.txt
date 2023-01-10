@@ -1,0 +1,8 @@
+backports.statistics==0.1.0
+beautifulsoup4==4.11.1
+click==6.7
+frida==15.1.27
+hexdump==3.3
+loguru==0.5.3
+PyQt5==5.15.7
+win_inet_pton==1.1.0
