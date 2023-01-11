@@ -18,8 +18,8 @@
     Pcapture -U -P [process name]  -v -p test.pcap 
 * 以下为我改包截图
 ![image](https://user-images.githubusercontent.com/121593186/211702658-3e737e3d-fc89-4821-a269-0d2f180cdc02.png)
-![image](https://user-images.githubusercontent.com/121593186/211702707-08f4f633-a7da-4f58-b819-e5cd94831499.png)
-![image](https://user-images.githubusercontent.com/121593186/211702721-5b3b4aaa-acd4-4772-b89d-2514d0117cd4.png)
+![image](https://user-images.githubusercontent.com/121593186/211705182-b603e918-09e6-4ab5-b19e-5989ce28b698.png)
+![image](https://user-images.githubusercontent.com/121593186/211705361-8ddee28d-6434-4177-949f-67f85982f0d1.png)
 * 详细使用命令参照以下
 Usage: Pcapture [-pcap <path>] [-host <192.168.1.1:27042>] [-verbose] [-ssl <lib>] [--isUsb] [--isSpawn] [-wait <seconds>] [-P <process name | process id>]
 Decrypts and logs a process's SSL traffic.
