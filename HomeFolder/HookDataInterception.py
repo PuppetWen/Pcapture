@@ -210,8 +210,20 @@ class startHook(QObject):
                                 self.script.post(SendData)
                                 break
                         time.sleep(0.15)
-                else:
-                    self.script.post("1")
+                elif self.Pcapture.RecvStateChange == True:
+                    if message["payload"]["function"] == "HTTP_recv" or message["payload"]["function"] == "SSL_read":
+                        self._Data.emit(stringData, message["payload"]["function"])
+                    time.sleep(0.5)  # 不做延迟会检测到队列为空，无法while等待
+                    if self.Pcapture.RecvQueue != []:
+                        while self.Pcapture.RecvQueue != []:
+                            if self.Pcapture.RecvPassChecked:
+                                if self.Pcapture.RecvHexStateChange == True:
+                                    QMessageBox.information(self.Pcapture, '提示', '请关闭hex编码！')
+                                else:
+                                    RecvData = self.scriptPost(self.Pcapture.ui.RecvData.toPlainText())
+                                    self.script.post(RecvData)
+                                    break
+                            time.sleep(0.15)
             elif self.Pcapture.RecvStateChange == True:
                 if message["payload"]["function"] == "HTTP_recv" or message["payload"]["function"] == "SSL_read":
                     self._Data.emit(stringData, message["payload"]["function"])
@@ -227,7 +239,7 @@ class startHook(QObject):
                                 break
                         time.sleep(0.15)
                 else:
-                    self.script.post("2")
+                    self.script.post("1")
             elif self.Pcapture.SendStateChange == False and self.Pcapture.RecvStateChange == False:
                 self.script.post("3")
 
